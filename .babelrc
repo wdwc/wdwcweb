@@ -1,5 +1,6 @@
 {
-  "presets": [
-    "@vue/app"
-  ]
+  "presets": [["env", { "modules": false }], "@vue/app"],
+  "plugins": [],
+  "comments": false,
+  "env": { "test": { "presets": ["env", "stage-2"], "plugins": ["istanbul"] } }
 }
